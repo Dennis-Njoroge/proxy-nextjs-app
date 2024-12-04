@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
     "paths": {
+      "@/lottie/*": ["./public/lottie/*"],
+      "@/icons/*": ["./public/icons/*"],
+      "@/static/*": ["./public/static/*"],
+      "@/template/*": ["./public/template/*"],
+      "@/public/*": ["./public/*"],
       "@/*": ["./src/*"]
+
     }
   }
 }

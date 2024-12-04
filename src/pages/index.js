@@ -1,6 +1,7 @@
 import Head from "next/head";
 import {APP_NAME} from "@/utils/constants";
 import Home from "@/components/@page-components/home";
+import ModernLayout from "@/components/@layouts/modern-layout";
 
 const  HomePage = () => {
   return (
@@ -14,6 +15,14 @@ const  HomePage = () => {
       <Home/>
     </>
   );
+}
+
+HomePage.getLayout = (page) => {
+    return (
+        <ModernLayout>
+            {page}
+        </ModernLayout>
+    )
 }
 
 export default HomePage;

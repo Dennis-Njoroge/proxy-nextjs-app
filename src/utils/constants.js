@@ -1,30 +1,4 @@
-export const COUNTRIES = [
-    {
-        name: "Tanzania, United Republic of Tanzania",
-        dialCode: "+255",
-        isoCode: "TZ",
-        flag: "https://cdn.kcak11.com/CountryFlags/countries/tz.svg",
-    },
-    {
-        name: "Kenya",
-        dialCode: "+254",
-        isoCode: "KE",
-        flag: "https://cdn.kcak11.com/CountryFlags/countries/ke.svg",
-    },
-    {
-        name: "Uganda",
-        dialCode: "+256",
-        isoCode: "UG",
-        flag: "https://cdn.kcak11.com/CountryFlags/countries/ug.svg",
-    },
-    {
-        name: "Rwanda",
-        dialCode: "+250",
-        isoCode: "RW",
-        flag: "https://cdn.kcak11.com/CountryFlags/countries/rw.svg",
-    }
-];
-export const APP_NAME = "Digital Store Admin Portal";
+export const APP_NAME = "Admin Portal";
 export const AUTH_TOKEN_KEY = 'accessToken';
 export const AUTH_REFRESH_TOKEN_KEY = 'refreshToken';
 export const PAGE_NAMES = {
@@ -47,37 +21,37 @@ export const PAGE_NAMES = {
 };
 export const userMenus = [
     {
-        pageName: PAGE_NAMES.DASHBOARD,
+        pageName: PAGE_NAMES.DASHBOARD.name,
         route: "/dashboard",
         enabled: true,
         pageIcon: "home"
     },
     {
-        pageName: PAGE_NAMES.PHONE_INSURANCE,
+        pageName: PAGE_NAMES.PHONE_INSURANCE.name,
         route: "/dashboard/phone-insurance",
         enabled: true,
         pageIcon: "phonelink_setup",
         child: [
             {
-                pageName: PAGE_NAMES.CLAIMS,
+                pageName: PAGE_NAMES.CLAIMS.name,
                 route: "/dashboard/phone-insurance/claims",
                 enabled: true,
                 pageIcon: "list",
             },
             {
-                pageName: PAGE_NAMES.ENROLLED_CUSTOMERS,
+                pageName: PAGE_NAMES.ENROLLED_CUSTOMERS.name,
                 route: "/dashboard/phone-insurance/device-customers",
                 enabled: true,
                 pageIcon: "people",
             },
             {
-                pageName: PAGE_NAMES.ENROLLED_DEVICES,
+                pageName: PAGE_NAMES.ENROLLED_DEVICES.name,
                 route: "/dashboard/phone-insurance/enrolled-devices",
                 enabled: true,
                 pageIcon: "security_update_good",
             },
             {
-                pageName: PAGE_NAMES.MANAGE_SHOPS_STORES,
+                pageName: PAGE_NAMES.MANAGE_SHOPS_STORES.name,
                 route: "/dashboard/phone-insurance/manage-stores",
                 enabled: true,
                 pageIcon: "store",
@@ -85,25 +59,25 @@ export const userMenus = [
         ]
     },
     {
-        pageName: PAGE_NAMES.AKIBA_PLUS,
+        pageName: PAGE_NAMES.AKIBA_PLUS.name,
         route: "/dashboard/akiba-plus",
         enabled: true,
         pageIcon: "credit_card_heart",
         child: [
             {
-                pageName: PAGE_NAMES.DASHBOARD,
+                pageName: PAGE_NAMES.DASHBOARD.name,
                 route: "/dashboard/akiba-plus",
                 enabled: true,
                 pageIcon: "credit_card_heart",
             },
             {
-                pageName: PAGE_NAMES.TRANSFERS,
+                pageName: PAGE_NAMES.TRANSFERS.name,
                 route: "/dashboard/akiba-plus/transfers",
                 enabled: true,
                 pageIcon: "currency_exchange",
             },
             {
-                pageName: PAGE_NAMES.CONTRIBUTIONS,
+                pageName: PAGE_NAMES.CONTRIBUTIONS.name,
                 route: "/dashboard/akiba-plus/contributions",
                 enabled: true,
                 pageIcon: "currency_exchange",
@@ -111,25 +85,25 @@ export const userMenus = [
         ]
     },
     {
-        pageName: PAGE_NAMES.DIGITAL_STORE,
+        pageName: PAGE_NAMES.DIGITAL_STORE.name,
         route: "/dashboard/digital-store",
         enabled: true,
         pageIcon: "store",
         child: [
             {
-                pageName: PAGE_NAMES.APPLICATIONS,
+                pageName: PAGE_NAMES.APPLICATIONS.name,
                 route: "/dashboard/digital-store/applications",
                 enabled: true,
                 pageIcon: "home",
             },
             {
-                pageName: PAGE_NAMES.CUSTOMERS,
+                pageName: PAGE_NAMES.CUSTOMERS.name,
                 route: "/dashboard/digital-store/customers",
                 enabled: true,
                 pageIcon: "currency_exchange",
             },
             {
-                pageName: PAGE_NAMES.GROUPS,
+                pageName: PAGE_NAMES.GROUPS.name,
                 route: "/dashboard/digital-store/groups",
                 enabled: true,
                 pageIcon: "groups"
@@ -137,19 +111,19 @@ export const userMenus = [
         ]
     },
     {
-        pageName: PAGE_NAMES.USER_MANAGEMENT,
+        pageName: PAGE_NAMES.USER_MANAGEMENT.name,
         route: "/dashboard/user-management",
         enabled: true,
         pageIcon: "people",
         child: [
             {
-                pageName: PAGE_NAMES.SYSTEM_USERS,
+                pageName: PAGE_NAMES.SYSTEM_USERS.name,
                 route: "/dashboard/user-management/users",
                 enabled: true,
                 pageIcon: "manage_accounts",
             },
             {
-                pageName: PAGE_NAMES.SYSTEM_ROLES,
+                pageName: PAGE_NAMES.SYSTEM_ROLES.name,
                 route: "/dashboard/user-management/roles",
                 enabled: true,
                 pageIcon: "engineering",
