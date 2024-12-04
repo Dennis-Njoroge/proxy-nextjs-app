@@ -7,6 +7,7 @@ import AccountButton from "@/components/@shared-components/buttons/account-butto
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import Box from "@mui/material/Box";
+import NotificationBadge from "@/components/@layouts/modern-layout/notification-badge";
 
 const AppBar = styled(MuiAppBar, {
     shouldForwardProp: (prop) => prop !== 'open',
@@ -45,20 +46,28 @@ const ModernNavbar = props => {
 
     return (
         <>
-            <AppBar position="fixed" open={open}>
+            <AppBar  position="fixed" open={open}>
                 <Toolbar sx={{height: '80px', color: 'text.primary'}}>
                     <Tooltip title = {open ? "Minimize" : "Expand"}>
                         <IconButton
+                            sx={{
+                                ml: open? -5 : 0,
+                                backgroundColor: 'secondary.main',
+                                color: 'primary.contrastText',
+                                '&:hover': {
+                                    backgroundColor: 'secondary.light',
+                                }
+                        }}
                             aria-label="open drawer"
                             onClick={handleDrawerOpen}
+                            size={'small'}
                             edge="start"
                             color={'inherit'}
-                            // sx={{ ml: -10, }}
                         >
                             {open ? <MenuOpenIcon/> : <MenuIcon/>}
                         </IconButton>
                     </Tooltip>
-                    <Typography variant={'h6'}>
+                    <Typography variant={'h6'} sx={{ ml: 1}} >
                         {title}
                     </Typography>
                     {/*{lgUp && (*/}
@@ -69,7 +78,7 @@ const ModernNavbar = props => {
                     {/*)}*/}
 
                     <Box sx={{flex: '1 0 auto'}}/>
-                    {/*<NotificationBadge/>*/}
+                    <NotificationBadge/>
                     <AccountButton/>
                 </Toolbar>
             </AppBar>

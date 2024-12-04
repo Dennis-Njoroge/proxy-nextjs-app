@@ -1,3 +1,4 @@
+import {poppins} from "@/utils/font";
 export const baseThemeOptions = {
     breakpoints: {
         values: {
@@ -12,7 +13,7 @@ export const baseThemeOptions = {
         MuiInputLabel: {
             styleOverrides: {
                 root: {
-                    fontSize: 16,
+                    fontSize: 14,
                     fontWeight: 600,
                 },
                 // shrink: {
@@ -117,7 +118,7 @@ export const baseThemeOptions = {
         MuiChip: {
             styleOverrides: {
                 root: {
-                    fontWeight: 500,
+                    fontWeight: 400,
                 },
             },
         },
@@ -140,6 +141,9 @@ export const baseThemeOptions = {
                     flexDirection: "column",
                     minHeight: "100%",
                     width: "100%",
+                },
+                "material-icons":{
+                  fontSize: "inherit"
                 },
                 "#__next": {
                     display: "flex",
@@ -256,7 +260,7 @@ export const baseThemeOptions = {
                     "& .MuiTableCell-root": {
                         borderBottom: "none",
                         fontSize: "12px",
-                        fontWeight: 600,
+                        fontWeight: 400,
                         lineHeight: 1,
                         letterSpacing: 0.5,
                         //textTransform: "uppercase",
@@ -275,28 +279,28 @@ export const baseThemeOptions = {
     },
     typography: {
         button: {
-            fontWeight: 600,
+            fontWeight: 400,
         },
-        fontFamily:'"Mulish", sans-serif',
+        fontFamily: poppins.style.fontFamily,
         body1: {
             fontSize: "1rem",
             fontWeight: 400,
             lineHeight: 1.5,
         },
         body2: {
-            fontSize: "0.875rem",
-            fontWeight: 400,
+            fontSize: "0.8rem",
+            fontWeight: 300,
             lineHeight: 1.57,
         },
         subtitle1: {
-            fontSize: "1rem",
-            fontWeight: 600,
-            lineHeight: 1.75,
+            fontSize: "0.9rem",
+            fontWeight: 400,
+            lineHeight: 1.5,
         },
         subtitle2: {
-            fontSize: "0.875rem",
-            fontWeight: 500,
-            lineHeight: 1.57,
+            fontSize: "0.8rem",
+            fontWeight: 400,
+            lineHeight: 1.4,
         },
         overline: {
             fontSize: "0.875rem",
@@ -305,38 +309,38 @@ export const baseThemeOptions = {
             lineHeight: 2.5,
             textTransform: "uppercase",
         },
-        // caption: {
-        //     fontSize: "0.75rem",
-        //     fontWeight: 400,
-        //     lineHeight: 1.66,
-        // },
+        caption: {
+            fontSize: "0.75rem",
+            fontWeight: 300,
+            lineHeight: 1.66,
+        },
         h1: {
-            fontWeight: 700,
+            fontWeight: 600,
             fontSize: "3.5rem",
             lineHeight: 1.375,
         },
         h2: {
-            fontWeight: 700,
+            fontWeight: 600,
             fontSize: "3rem",
             lineHeight: 1.375,
         },
         h3: {
-            fontWeight: 700,
+            fontWeight: 600,
             fontSize: "2.25rem",
             lineHeight: 1.375,
         },
         h4: {
-            fontWeight: 700,
+            fontWeight: 600,
             fontSize: "2rem",
             lineHeight: 1.375,
         },
         h5: {
-            fontWeight: 600,
+            fontWeight: 500,
             fontSize: "1.5rem",
             lineHeight: 1.375,
         },
         h6: {
-            fontWeight: 600,
+            fontWeight: 500,
             fontSize: "1.125rem",
             lineHeight: 1.375,
         },

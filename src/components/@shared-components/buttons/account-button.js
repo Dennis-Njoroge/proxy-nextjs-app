@@ -39,16 +39,19 @@ const AccountButton = () => {
                     sx={{
                         height: 45,
                         width: 45,
-                        backgroundColor: theme => alpha(theme.palette.success.main, 0.1),
-                        color: 'success.main',
+                        backgroundColor: theme => alpha(theme.palette.primary.main, 0.1),
+                        color: 'primary.main',
                     }}
                 >
                     {getInitials(user?.userName)}
                 </Avatar>
                 {lgUp && (
                     <>
-                        <Typography sx={{ mx: 2, fontWeight:'bold' }} variant={'body2'} >
+                        <Typography sx={{ mx: 2 }} variant={'body1'} >
                             {user?.userName}
+                            <Typography variant={'body2'}>
+                                {"(Admin)"}
+                            </Typography>
                         </Typography>
                         <ExpandMore/>
                     </>

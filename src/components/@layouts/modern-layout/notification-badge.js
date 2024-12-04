@@ -1,13 +1,13 @@
 import Box from "@mui/material/Box";
 import Badge from "@mui/material/Badge";
-import { IoIosNotificationsOutline } from "react-icons/io";
+import NotificationIcon from "@mui/icons-material/Notifications";
 
 const NotificationBadge = () => {
     return (
         <>
             <Box sx={{ color: 'action.active' }}>
-                <Badge color="secondary" variant="dot" badgeContent=" ">
-                    <IoIosNotificationsOutline size={'25px'}/>
+                <Badge color="primary" variant="dot" badgeContent=" ">
+                    <NotificationIcon color={'primary'} size={'25px'}/>
                 </Badge>
             </Box>
         </>

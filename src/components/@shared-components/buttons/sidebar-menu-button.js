@@ -6,6 +6,7 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 
 const SidebarMenuButton = props => {
     const {open, icon, width='auto', isActive, label, color = 'inherit', backgroundColor, isParent = false ,...others} = props;
+    const iconSize  = isParent ? 30 : 30;
 
     return (
         <>
@@ -16,10 +17,6 @@ const SidebarMenuButton = props => {
                 width: width,
                 overflow: 'hidden',
                 transition: 'background-color 0.3s',
-                // '&:hover': {
-                //     backgroundColor: !isParent ? 'neutral.300' : isActive ? 'neutral.300' : backgroundColor,
-                // },
-                //backdropFilter: 'blur(90px)',
             }}
                  {...others}
             >
@@ -31,19 +28,31 @@ const SidebarMenuButton = props => {
                     justifyContent: 'flex-start',
                     //justifyContent: 'center',
                     alignItems: 'center',
-                    gap:2,
-                    py:1,
-                    px:1,
+                    gap:1,
+                    py:0.5,
+                    px:0.5,
                     '&:hover': {
                         color:  !isActive ? 'neutral.300' : "text.primary"
                     },
                 }}
 
                 >
-                    <Icon fontSize={'small'} color={"inherit"}>
-                        {icon}
-                    </Icon>
-                    <Typography   variant={'subtitle1'} color={"inherit"}>
+                    <Box sx={{
+                        backgroundColor: isActive ? 'primary.main' :'inherit',
+                        color: isActive ? 'primary.contrastText' :'inherit',
+                        borderRadius: 1,
+                        width: iconSize,
+                        height: iconSize,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    }}>
+                        <Icon fontSize={'small'} color={"inherit"}>
+                            {icon}
+                        </Icon>
+                    </Box>
+
+                    <Typography   variant={'subtitle1'} fontWeight={isActive ? 'bold' : 'inherit'} color={"inherit"}>
                         {label}
                     </Typography>
                     <Box flex={'1 0 auto'}/>
