@@ -22,94 +22,94 @@ export const PAGE_NAMES = {
 export const userMenus = [
     {
         pageName: PAGE_NAMES.DASHBOARD.name,
-        route: "/dashboard",
+        route: "/",
         enabled: true,
         pageIcon: "home"
     },
-    {
-        pageName: PAGE_NAMES.PHONE_INSURANCE.name,
-        route: "/dashboard/phone-insurance",
-        enabled: true,
-        pageIcon: "phonelink_setup",
-        child: [
-            {
-                pageName: PAGE_NAMES.CLAIMS.name,
-                route: "/dashboard/phone-insurance/claims",
-                enabled: true,
-                pageIcon: "list",
-            },
-            {
-                pageName: PAGE_NAMES.ENROLLED_CUSTOMERS.name,
-                route: "/dashboard/phone-insurance/device-customers",
-                enabled: true,
-                pageIcon: "people",
-            },
-            {
-                pageName: PAGE_NAMES.ENROLLED_DEVICES.name,
-                route: "/dashboard/phone-insurance/enrolled-devices",
-                enabled: true,
-                pageIcon: "security_update_good",
-            },
-            {
-                pageName: PAGE_NAMES.MANAGE_SHOPS_STORES.name,
-                route: "/dashboard/phone-insurance/manage-stores",
-                enabled: true,
-                pageIcon: "store",
-            }
-        ]
-    },
-    {
-        pageName: PAGE_NAMES.AKIBA_PLUS.name,
-        route: "/dashboard/akiba-plus",
-        enabled: true,
-        pageIcon: "credit_card_heart",
-        child: [
-            {
-                pageName: PAGE_NAMES.DASHBOARD.name,
-                route: "/dashboard/akiba-plus",
-                enabled: true,
-                pageIcon: "credit_card_heart",
-            },
-            {
-                pageName: PAGE_NAMES.TRANSFERS.name,
-                route: "/dashboard/akiba-plus/transfers",
-                enabled: true,
-                pageIcon: "currency_exchange",
-            },
-            {
-                pageName: PAGE_NAMES.CONTRIBUTIONS.name,
-                route: "/dashboard/akiba-plus/contributions",
-                enabled: true,
-                pageIcon: "currency_exchange",
-            }
-        ]
-    },
-    {
-        pageName: PAGE_NAMES.DIGITAL_STORE.name,
-        route: "/dashboard/digital-store",
-        enabled: true,
-        pageIcon: "store",
-        child: [
-            {
-                pageName: PAGE_NAMES.APPLICATIONS.name,
-                route: "/dashboard/digital-store/applications",
-                enabled: true,
-                pageIcon: "home",
-            },
-            {
-                pageName: PAGE_NAMES.CUSTOMERS.name,
-                route: "/dashboard/digital-store/customers",
-                enabled: true,
-                pageIcon: "currency_exchange",
-            },
-            {
-                pageName: PAGE_NAMES.GROUPS.name,
-                route: "/dashboard/digital-store/groups",
-                enabled: true,
-                pageIcon: "groups"
-            }
-        ]
-    },
+    // {
+    //     pageName: PAGE_NAMES.PHONE_INSURANCE.name,
+    //     route: "/dashboard/phone-insurance",
+    //     enabled: true,
+    //     pageIcon: "phonelink_setup",
+    //     child: [
+    //         {
+    //             pageName: PAGE_NAMES.CLAIMS.name,
+    //             route: "/dashboard/phone-insurance/claims",
+    //             enabled: true,
+    //             pageIcon: "list",
+    //         },
+    //         {
+    //             pageName: PAGE_NAMES.ENROLLED_CUSTOMERS.name,
+    //             route: "/dashboard/phone-insurance/device-customers",
+    //             enabled: true,
+    //             pageIcon: "people",
+    //         },
+    //         {
+    //             pageName: PAGE_NAMES.ENROLLED_DEVICES.name,
+    //             route: "/dashboard/phone-insurance/enrolled-devices",
+    //             enabled: true,
+    //             pageIcon: "security_update_good",
+    //         },
+    //         {
+    //             pageName: PAGE_NAMES.MANAGE_SHOPS_STORES.name,
+    //             route: "/dashboard/phone-insurance/manage-stores",
+    //             enabled: true,
+    //             pageIcon: "store",
+    //         }
+    //     ]
+    // },
+    // {
+    //     pageName: PAGE_NAMES.AKIBA_PLUS.name,
+    //     route: "/dashboard/akiba-plus",
+    //     enabled: true,
+    //     pageIcon: "credit_card_heart",
+    //     child: [
+    //         {
+    //             pageName: PAGE_NAMES.DASHBOARD.name,
+    //             route: "/dashboard/akiba-plus",
+    //             enabled: true,
+    //             pageIcon: "credit_card_heart",
+    //         },
+    //         {
+    //             pageName: PAGE_NAMES.TRANSFERS.name,
+    //             route: "/dashboard/akiba-plus/transfers",
+    //             enabled: true,
+    //             pageIcon: "currency_exchange",
+    //         },
+    //         {
+    //             pageName: PAGE_NAMES.CONTRIBUTIONS.name,
+    //             route: "/dashboard/akiba-plus/contributions",
+    //             enabled: true,
+    //             pageIcon: "currency_exchange",
+    //         }
+    //     ]
+    // },
+    // {
+    //     pageName: PAGE_NAMES.DIGITAL_STORE.name,
+    //     route: "/dashboard/digital-store",
+    //     enabled: true,
+    //     pageIcon: "store",
+    //     child: [
+    //         {
+    //             pageName: PAGE_NAMES.APPLICATIONS.name,
+    //             route: "/dashboard/digital-store/applications",
+    //             enabled: true,
+    //             pageIcon: "home",
+    //         },
+    //         {
+    //             pageName: PAGE_NAMES.CUSTOMERS.name,
+    //             route: "/dashboard/digital-store/customers",
+    //             enabled: true,
+    //             pageIcon: "currency_exchange",
+    //         },
+    //         {
+    //             pageName: PAGE_NAMES.GROUPS.name,
+    //             route: "/dashboard/digital-store/groups",
+    //             enabled: true,
+    //             pageIcon: "groups"
+    //         }
+    //     ]
+    // },
     {
         pageName: PAGE_NAMES.USER_MANAGEMENT.name,
         route: "/dashboard/user-management",
